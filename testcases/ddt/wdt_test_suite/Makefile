@@ -12,8 +12,8 @@ UNWANTED_FILES          := Makefile
 
 INSTALL_MODE            := 00755
 
-CFLAGS		= -g -Wall -D__EXPORTED_HEADERS__
-LDFLAGS         += -g
+CFLAGS		= -g -Wall -D__EXPORTED_HEADERS__ -fPIC -fcommon
+LDFLAGS         += -g -fcommon
 INCLUDES        = -I $(KERNEL_USR_INC) -I src/interface/common -I ../utils/user
 
 #Path of header files to be included

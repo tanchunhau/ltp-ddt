@@ -15,8 +15,8 @@ INSTALL_MODE            := 00755
 
 #INSTALL_TARGETS         := $(filter-out $(UNWANTED_FILES),$(notdir $(patsubst $(abs_srcdir)/%,%,$(wildcard $(abs_srcdir)/*))))
 
-CFLAGS          += -g -Wall
-LDFLAGS         += -g
+CFLAGS          += -g -Wall -fPIC -fcommon
+LDFLAGS         += -g -fcommon
 LDLIBS          += -lpthread
 
 #List of source files- Update this on adding a new C file
