@@ -15,8 +15,8 @@ INSTALL_MODE            := 00755
 
 #INSTALL_TARGETS         := $(filter-out $(UNWANTED_FILES),$(notdir $(patsubst $(abs_srcdir)/%,%,$(wildcard $(abs_srcdir)/*))))
 
-CFLAGS          += -g -Wall -O1 -fomit-frame-pointer
-LDFLAGS         += -g -static 
+CFLAGS          += -g -Wall -O1 -fomit-frame-pointer -fPIC
+LDFLAGS         += -g -static -fcommon
 LDLIBS          += -lpthread
 INCLUDES        = -I $(KERNEL_USR_INC) -I src/interface/common -I ../utils/user
 

@@ -15,8 +15,8 @@ INSTALL_MODE            := 00755
 
 #INSTALL_TARGETS         := $(filter-out $(UNWANTED_FILES),$(notdir $(patsubst $(abs_srcdir)/%,%,$(wildcard $(abs_srcdir)/*))))
 
-CFLAGS          += -g -Wall 
-LDFLAGS         += -g -static
+CFLAGS          += -g -Wall -fPIC -fcommon
+LDFLAGS         += -g -static -fcommon
 INCLUDES        = -I src/user/parser -I src/user/interface/common -I ../utils/user  -I $(KERNEL_INC)
 EXTRA_CFLAGS := -I$(src)/../utils/kernel
 EXTRA_CFLAGS += -I$(src)/src/kernel/interface/common
