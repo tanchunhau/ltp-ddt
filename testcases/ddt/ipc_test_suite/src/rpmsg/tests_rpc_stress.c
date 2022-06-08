@@ -54,7 +54,7 @@
 
 #include <ctype.h>
 #include <sys/ioctl.h>
-#include "linux/rpmsg_rpc.h"
+#include "rpmsg_rpc.h"
 
 typedef struct {
     int a;
