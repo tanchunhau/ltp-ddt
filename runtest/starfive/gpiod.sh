@@ -1,0 +1,6 @@
+# @name GPIO interrupt test
+# @desc Set gpio pin in each bank to output and then use it to trigger interrupt.
+#  Before run this test, kernel may be required to be modified to do the pinmux for the pins to test
+# @requires gpio
+
+GPIOD_READ_WRITE source 'common.sh'; gpiod_test.sh

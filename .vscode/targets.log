@@ -1,4 +1,2781 @@
-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-'make.exe' is not recognized as an internal or external command,
-operable program or batch file.
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make -C /home/yusheng/Documents/ltp-ddt help; false
+ 
+# make[1]: Entering directory '/home/yusheng/Documents/ltp-ddt'
+ 
+Please read the Configuration section in /home/yusheng/Documents/ltp-ddt/INSTALL
+ 
+make[1]: *** [Makefile:205: help] Error 1
 
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Wed Jul 20 09:52:44 2022
+
+# Variables
+
+# makefile (from 'Makefile', line 167)
+SRCDIR_INSTALL_READONLY := Version
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+LC_NAME = ms_MY.UTF-8
+# environment
+LC_NUMERIC = ms_MY.UTF-8
+# environment
+VSCODE_CWD = /home/yusheng/Documents
+# makefile (from 'Makefile', line 63)
+define target_to_dir_dep_mapping
+ifeq ($$(filter %-clean,$(1)),) # not *-clean
+$(1): | $$(abs_top_builddir)/$$(basename $$(subst -,.,$(1)))
+else				# clean
+$(1):: | $$(abs_top_builddir)/$$(basename $$(subst -,.,$(1)))
+endif
+endef
+# environment
+LC_ADDRESS = ms_MY.UTF-8
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 38)
+BUILD_TREE_UNCONFIGURED := 4
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/102/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/yusheng/Documents/ltp-ddt
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+OLDPWD = /home/yusheng
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 60)
+builddir := .
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/yusheng/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+# makefile (from 'Makefile', line 83)
+BOOTSTRAP_TARGETS := doc gitignore_clean lib libs pan testcases tools utils
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.CYVVP1
+# default
+.LOADED := 
+# makefile (from 'Makefile', line 165)
+BINDIR_INSTALL_SCRIPTS := execltp
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile (from 'Makefile', line 87)
+MAKE_TARGETS := pan-all utils-all testcases-all tools-all
+# makefile
+MAKEFLAGS = prRw
+# environment
+GNOME_TERMINAL_SERVICE = :1.108
+# makefile
+CURDIR := /home/yusheng/Documents/ltp-ddt
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 26)
+AUTOHEADER = autoheader
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -prRw
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 25)
+BEFORE := .gitignore-before
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 1)
+MAKEFILE_LIST := Makefile /home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk /home/yusheng/Documents/ltp-ddt/include/mk/functions.mk /home/yusheng/Documents/ltp-ddt/include/mk/automake.mk /home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# makefile (from 'Makefile', line 134)
+INCLUDE_CLEAN_RDEPS := 
+# environment
+VSCODE_PID = 6144
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 64)
+AUTOMAKE_FILES := config.guess config.sub install-sh missing stamp-h1
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 65)
+cwd_rel2 := /home/yusheng/Documents/ltp-ddt
+# environment
+SESSION_MANAGER = local/yusheng:@/tmp/.ICE-unix/1486,unix/yusheng:/tmp/.ICE-unix/1486
+# automatic
+*F = $(notdir $*)
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 36)
+BUILD_TREE_NONSRCDIR_INSTALL := 3
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 29)
+IGNORE_DIR_EXPR := egrep -v "^$$(echo "testcases/realtime" | tr " " "|")"
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 27)
+AUTOMAKE = automake
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from 'Makefile', line 102)
+INSTALL_DIR := /
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 46)
+abs_top_srcdir := /home/yusheng/Documents/ltp-ddt
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 93)
+AUTOGENERATED_FILES = include/mk/config.mk include/mk/features.mk lib/ltp.pc m4/Makefile execltp
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 166)
+SRCDIR_INSTALL_SCRIPTS := IDcheck.sh runltp ver_linux
+# default
+MAKECMDGOALS := help
+# environment
+XMODIFIERS = @im=ibus
+# makefile (from 'Makefile', line 168)
+SRCDIR_INSTALL_TARGETS := IDcheck.sh runltp ver_linux Version
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 1
+# environment
+UCLINUX = 0
+# makefile (from 'Makefile', line 30)
+top_srcdir = $(CURDIR)
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/722a1408_f86f_4e93_a918_1a83da2b16bd
+# environment
+MAKELEVEL := 1
+# default
+MAKE = $(MAKE_COMMAND)
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 54)
+top_builddir = $(top_srcdir)
+# environment
+SNAP_COOKIE = dPYqhgD2HpsV0zwzshVdQJepVkWxBo4_PU8BRXyHVzRPDr-tTVoE
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 34)
+BUILD_TREE_SRCDIR_INSTALL := 2
+# environment
+LC_MONETARY = ms_MY.UTF-8
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/yusheng/snap/code/common
+# environment
+LC_TIME = ms_MY.UTF-8
+# environment
+SNAP = /snap/code/102
+# environment
+INVOCATION_ID = ddeac89929a544338ef3f94aa6e0c8f6
+# environment
+SNAP_REVISION = 102
+# environment
+SNAP_REAL_HOME = /home/yusheng
+# makefile (from 'Makefile', line 71)
+COMMON_TARGETS := pan utils testcases tools
+# makefile (from 'Makefile', line 194)
+INSTALL_TARGETS := doc-install pan-install utils-install testcases-install tools-install //execltp
+# environment
+USERNAME = yusheng
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LC_TELEPHONE = ms_MY.UTF-8
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/functions.mk', line 45)
+define get_make_dirs
+SUBDIRS	?= $$(subst $$(abs_srcdir)/,,$$(patsubst %/Makefile,%,$$(wildcard $$(abs_srcdir)/*/Makefile)))
+SUBDIRS	:= $$(filter-out $$(FILTER_OUT_DIRS),$$(SUBDIRS))
+endef
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 69)
+abs_srcdir := /home/yusheng/Documents/ltp-ddt
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 71)
+srcdir := /home/yusheng/Documents/ltp-ddt
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 64)
+cwd_rel1 := 
+# environment
+LOGNAME = yusheng
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := testcases/realtime/configure
+# environment
+SYSTEMD_EXEC_PID = 1508
+# environment
+DISPLAY = :0
+# environment
+USER = yusheng
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 57)
+abs_top_builddir := /home/yusheng/Documents/ltp-ddt
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/102
+# environment
+SNAP_CONTEXT = dPYqhgD2HpsV0zwzshVdQJepVkWxBo4_PU8BRXyHVzRPDr-tTVoE
+# environment
+ 
+MANAGERPID = 1272
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 62)
+abs_builddir := /home/yusheng/Documents/ltp-ddt
+# environment
+LC_MEASUREMENT = ms_MY.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 6093
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 25)
+AUTOCONF = autoconf
+# environment
+LC_PAPER = ms_MY.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+COLORTERM = truecolor
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/yusheng/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+JOURNAL_STREAM = 8:49517
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+BUILD_TREE_STATE = 2
+# makefile (from 'Makefile', line 85)
+CLEAN_TARGETS := gitignore_clean-clean pan-clean utils-clean testcases-clean tools-clean lib-clean libs-clean
+# environment
+HOME = /home/yusheng
+# environment
+QT_IM_MODULE = ibus
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 24)
+ACLOCAL = aclocal
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 32)
+BUILD_TREE_BUILDDIR_INSTALL := 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-4122e680-1.69.2-main.sock
+# environment
+TERM = xterm-256color
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/102/usr/share/glib-2.0/schemas
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 27)
+AFTER := .gitignore-after
+# environment
+IM_CONFIG_PHASE = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = 3b889b09
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VTE_VERSION = 6800
+# environment
+SNAP_COMMON = /var/snap/code/common
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 29)
+AUTOCONFED_SUBDIRS = testcases/realtime
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 66)
+cwd_rel_from_top := 
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+SNAP_USER_DATA = /home/yusheng/snap/code/102
+# environment
+XDG_MENU_PREFIX = gnome-
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 29)
+ENV_PRE_LOADED = 1
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/functions.mk', line 32)
+define generate_install_rule
+
+INSTALL_FILES		+= $$(abspath $$(DESTDIR)/$(3)/$(1))
+
+$$(abspath $$(DESTDIR)/$(3)/$(1)): $$(abspath $$(dir $$(DESTDIR)/$(3)/$(1)))
+	install -m $$(INSTALL_MODE) $(shell test -d "$(2)/$(1)" && echo "-d") $(PARAM) "$(2)/$(1)" $$@
+	$(shell test -d "$(2)/$(1)" && echo "install -m "'$$(INSTALL_MODE) $(PARAM)' "$(2)/$(1)/*" -t '$$@')
+endef
+# environment
+GDMSESSION = ubuntu
+# environment
+LC_IDENTIFICATION = ms_MY.UTF-8
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+# Load=173/1024=17%, Rehash=0, Collisions=66/431=15%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# /home/yusheng/Documents/ltp-ddt/mk/include: could not be stat'd.
+# /home/yusheng/Documents/ltp-ddt/m4 (device 2051, inode 2497679): 33 files, no impossibilities.
+# m4 (device 2051, inode 2497679): 33 files, no impossibilities.
+# . (device 2051, inode 2497179): 41 files, no impossibilities.
+# /home/yusheng/Documents/ltp-ddt/mk: could not be stat'd.
+# /home/yusheng/Documents/ltp-ddt/include (device 2051, inode 2497285): No files, no impossibilities so far.
+
+# 107 files, no impossibilities in 6 directories.
+
+# Implicit Rules
+
+%.am:
+
+%.default:
+
+%.h:
+
+%.in:
+
+%.m4:
+
+%.mk:
+
+# 6 implicit rules, 0 (0.0%) terminal.
+# Files
+
+Version:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 176):
+	if git describe >/dev/null 2>&1; then \
+		git describe > "$@"; \
+	else \
+		cp $(top_srcdir)/VERSION "$@"; \
+	fi
+
+# Not a target:
+m4/ltp-taskstats.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-libmnl.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+utils-all: lib-all libs-all | /home/yusheng/Documents/ltp-ddt/utils
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+# Not a target:
+m4/ltp-nommu-linux.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean_install_dir::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 149):
+	$(RM) -Rf "$(INSTALL_DIR)"
+
+# Not a target:
+m4/ltp-clone7args.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+distclean:: clean ac-distclean
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'distclean'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 101):
+	for d in $(AUTOCONFED_SUBDIRS); do \
+	    $(MAKE) -C "$(top_srcdir)/$$d" $@; \
+	done
+	$(RM) -f $(AUTOGENERATED_FILES)
+
+m4/Makefile: /home/yusheng/Documents/ltp-ddt/config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 109):
+	$(SHELL) $^
+
+# Not a target:
+.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pan-install: / / | /home/yusheng/Documents/ltp-ddt/pan
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+lib-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+lib-clean:: | /home/yusheng/Documents/ltp-ddt/lib
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+testcases:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ax_compare_version.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/include/mk/features.mk:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 115):
+	$(MAKE) -C $(top_srcdir) help; false
+
+# Not a target:
+.am:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pan:
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-eventfd.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lib/ltp.pc: /home/yusheng/Documents/ltp-ddt/config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 109):
+	$(SHELL) $^
+
+testcases/realtime/configure:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 36):
+	$(MAKE) -C $(@D) autotools
+
+# Not a target:
+m4/ltp-docparse.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+m4/Makefile.in: m4/Makefile.am aclocal.m4
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 68):
+	$(AUTOMAKE) -c -a
+
+# Not a target:
+.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.gitignore: | .gitignore-before .gitignore-after
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 51):
+	diff -u $(BEFORE) $(AFTER) | grep '^+' | sed -e 's,^\+,,g' > $@
+
+include-all: | /home/yusheng/Documents/ltp-ddt/include
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+# Not a target:
+configure.ac:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include-install: /home/yusheng/Documents/ltp-ddt/include/config.h include/mk/config.mk include-all | /home/yusheng/Documents/ltp-ddt/include
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+# Not a target:
+m4/ltp-tirpc.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-numa.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/utils:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+configure: configure.ac aclocal.m4
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 51):
+	$(AUTOCONF)
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 09:47:42.401609898
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+m4/ltp-fcntl.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lib-install: lib-all | /home/yusheng/Documents/ltp-ddt/lib
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/include/mk/functions.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 09:47:42.409606995
+#  File has been updated.
+#  Successfully updated.
+
+missing: m4/Makefile.in
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/Makefile.am:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/include/mk/config.mk:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 115):
+	$(MAKE) -C $(top_srcdir) help; false
+
+utils-install: / / | /home/yusheng/Documents/ltp-ddt/utils
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+//ver_linux:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: '//ver_linux'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 189):
+	install -m 00755 "$(top_srcdir)/$(@F)" "$@"
+
+cscope: pan utils testcases tools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 208):
+	cscope -R -b
+
+stamp-h1: m4/Makefile.in
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-crypto.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 58):
+	mkdir -p "$@"
+
+clean:: gitignore_clean-clean pan-clean utils-clean testcases-clean tools-clean lib-clean libs-clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 161):
+	$(RM) -f Version
+
+# Not a target:
+m4/ltp-host-cpu.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/testcases:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+# Not a target:
+m4/ltp-linuxrandom.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+tools-all: lib-all libs-all | /home/yusheng/Documents/ltp-ddt/tools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+testcases-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+testcases-clean:: | /home/yusheng/Documents/ltp-ddt/testcases
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+autoconf: configure
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+//Version: Version
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 183):
+	install -m 00644 "$(top_builddir)/$(@F)" "$@"
+
+# Not a target:
+m4/ltp-keyutils.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-ptrace.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-acl.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-fortify_source.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+utils-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+ 
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+utils-clean:: | /home/yusheng/Documents/ltp-ddt/utils
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/include:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+menuconfig:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 212):
+	@$(SHELL) "$(top_srcdir)/ltpmenu"
+
+aclocal: aclocal.m4
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+gitignore_clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 35):
+	$(RM) -f $(BEFORE) $(AFTER)
+
+autoheader: configure.ac m4/ax_compare_version.m4 m4/ax_prog_perl_modules.m4 m4/ltp-acl.m4 m4/ltp-atomic.m4 m4/ltp-builtin_clear_cache.m4 m4/ltp-cap.m4 m4/ltp-clone7args.m4 m4/ltp-crypto.m4 m4/ltp-docparse.m4 m4/ltp-eventfd.m4 m4/ltp-fcntl.m4 m4/ltp-fortify_source.m4 m4/ltp-host-cpu.m4 m4/ltp-kernel_devel.m4 m4/ltp-keyutils.m4 m4/ltp-libmnl.m4 m4/ltp-linuxrandom.m4 m4/ltp-mremap_fixed.m4 m4/ltp-nommu-linux.m4 m4/ltp-numa.m4 m4/ltp-perf_event_open.m4 m4/ltp-ptrace.m4 m4/ltp-selinux.m4 m4/ltp-signalfd.m4 m4/ltp-sync_add_and_fetch.m4 m4/ltp-taskstats.m4 m4/ltp-tirpc.m4 m4/ltp-utimensat.m4 m4/ltp-warn_oldstyle.m4 m4/ltp-version.m4 aclocal.m4
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 55):
+	$(AUTOHEADER)
+
+pan-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+pan-clean:: | /home/yusheng/Documents/ltp-ddt/pan
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pan-all: lib-all libs-all | /home/yusheng/Documents/ltp-ddt/pan
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+/home/yusheng/Documents/ltp-ddt/lib:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+maintainer-clean:: distclean ac-maintainer-clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 09:47:42.409606995
+#  File has been updated.
+#  Successfully updated.
+
+.gitignore-before:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 38):
+	$(MAKE) distclean
+	$(MAKE) ac-maintainer-clean
+	find . | $(IGNORE_DIR_EXPR) > $@
+
+/home/yusheng/Documents/ltp-ddt/doc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+lib-all: | /home/yusheng/Documents/ltp-ddt/lib
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+config.guess: m4/Makefile.in
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+ac-distclean:: ac-clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+automake: aclocal config.guess config.sub install-sh missing stamp-h1
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/tools:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+/home/yusheng/Documents/ltp-ddt/libs:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+# Not a target:
+m4/ltp-mremap_fixed.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include/mk/features.mk: /home/yusheng/Documents/ltp-ddt/config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 109):
+	$(SHELL) $^
+
+include-clean:: | /home/yusheng/Documents/ltp-ddt/include
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 137):
+	-$(MAKE) -C include -f "$(abs_top_srcdir)/include/Makefile" clean
+
+all: pan-all utils-all testcases-all tools-all Version
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+help:
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := help
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/16=6%
+#  recipe to execute (from 'Makefile', line 204):
+	@echo "Please read the Configuration section in $(top_srcdir)/INSTALL"
+	@exit 1
+
+tools-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+tools-clean:: | /home/yusheng/Documents/ltp-ddt/tools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-perf_event_open.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+tools-install: / / | /home/yusheng/Documents/ltp-ddt/tools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 09:47:42.409606995
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+VERSION:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+config.sub: m4/Makefile.in
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-cap.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/include/config.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+m4/ltp-version.m4: VERSION
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 61):
+	sed -n '1{s:LTP-:m4_define([LTP_VERSION],[:;s:$$:]):;p;q}' $< > $@
+
+# Not a target:
+m4/ax_prog_perl_modules.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/pan:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+ 
+	mkdir -m 00755 -p "$@"
+
+autotools: aclocal autoconf autoheader automake testcases/realtime/configure
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+ac-maintainer-clean:: ac-distclean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 82):
+	for d in $(AUTOCONFED_SUBDIRS); do \
+	    $(MAKE) -C "$(top_srcdir)/$$d" $@; \
+	done
+	$(RM) -f aclocal.m4 configure $(AUTOMAKE_FILES) m4/Makefile.in
+	$(RM) -f include/*config.h.in
+
+# Not a target:
+m4/ltp-signalfd.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+testcases-install: / / | /home/yusheng/Documents/ltp-ddt/testcases
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+libs-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+libs-clean:: | /home/yusheng/Documents/ltp-ddt/libs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+aclocal.m4: m4/ax_compare_version.m4 m4/ax_prog_perl_modules.m4 m4/ltp-acl.m4 m4/ltp-atomic.m4 m4/ltp-builtin_clear_cache.m4 m4/ltp-cap.m4 m4/ltp-clone7args.m4 m4/ltp-crypto.m4 m4/ltp-docparse.m4 m4/ltp-eventfd.m4 m4/ltp-fcntl.m4 m4/ltp-fortify_source.m4 m4/ltp-host-cpu.m4 m4/ltp-kernel_devel.m4 m4/ltp-keyutils.m4 m4/ltp-libmnl.m4 m4/ltp-linuxrandom.m4 m4/ltp-mremap_fixed.m4 m4/ltp-nommu-linux.m4 m4/ltp-numa.m4 m4/ltp-perf_event_open.m4 m4/ltp-ptrace.m4 m4/ltp-selinux.m4 m4/ltp-signalfd.m4 m4/ltp-sync_add_and_fetch.m4 m4/ltp-taskstats.m4 m4/ltp-tirpc.m4 m4/ltp-utimensat.m4 m4/ltp-warn_oldstyle.m4 m4/ltp-version.m4
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 45):
+	$(ACLOCAL) -I m4
+
+testcases-all: lib-all libs-all | /home/yusheng/Documents/ltp-ddt/testcases
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+.gitignore-after:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 43):
+	$(MAKE) autotools
+	./configure --prefix=/dev/null
+	$(MAKE) all
+	find . | $(IGNORE_DIR_EXPR) > $@
+	# Set everything in autoconf land back to a sane state.
+	$(MAKE) distclean
+
+# Not a target:
+m4/ltp-atomic.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+//runltp:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: '//runltp'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 189):
+	install -m 00755 "$(top_srcdir)/$(@F)" "$@"
+
+doc-install: / / | /home/yusheng/Documents/ltp-ddt/doc
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+install: doc-install pan-install utils-install testcases-install tools-install //execltp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/gitignore_clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/config.status:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+//execltp: / /
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: '//execltp'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 186):
+	install -m 00755 "$(top_builddir)/$(@F)" "$@"
+
+//IDcheck.sh:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: '//IDcheck.sh'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 189):
+	install -m 00755 "$(top_srcdir)/$(@F)" "$@"
+
+# Not a target:
+.default:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-warn_oldstyle.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+tools:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+gitignore_clean-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+gitignore_clean-clean:: | /home/yusheng/Documents/ltp-ddt/gitignore_clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+utils:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ac-clean::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 72):
+	$(RM) -rf autom4te.cache
+	$(RM) -f config.log config.status
+	$(RM) -f include/config.h include/stamp-h1
+	$(RM) -f m4/Makefile m4/ltp-version.m4
+	for d in $(AUTOCONFED_SUBDIRS); do \
+	    $(MAKE) -C "$(top_srcdir)/$$d" $@; \
+	done
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 09:47:42.409606995
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+m4/ltp-kernel_devel.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.SUFFIXES: .am .default .h .in .m4 .mk
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: testcases/realtime/configure autotools aclocal autoconf autoheader automake ac-clean ac-distclean ac-maintainer-clean gitignore_clean include-all include-install clean_install_dir Version help
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-selinux.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+install-sh: m4/Makefile.in
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include/mk/config.mk: /home/yusheng/Documents/ltp-ddt/config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 109):
+	$(SHELL) $^
+
+execltp: /home/yusheng/Documents/ltp-ddt/config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 109):
+	$(SHELL) $^
+
+libs-all: /home/yusheng/Documents/ltp-ddt/libs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+# Not a target:
+m4/ltp-sync_add_and_fetch.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-utimensat.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-builtin_clear_cache.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.mk:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=129/1024=13%, Rehash=0, Collisions=26/438=6%
+# VPATH Search Paths
+
+vpath %.am /home/yusheng/Documents/ltp-ddt/m4
+vpath %.default /home/yusheng/Documents/ltp-ddt/include
+vpath %.h /home/yusheng/Documents/ltp-ddt/include:/home/yusheng/Documents/ltp-ddt/include
+vpath %.in /home/yusheng/Documents/ltp-ddt/include
+vpath %.m4 /home/yusheng/Documents/ltp-ddt/m4
+vpath %.mk /home/yusheng/Documents/ltp-ddt/mk:/home/yusheng/Documents/ltp-ddt/mk/include
+
+# 6 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 205 / storage = 3308 B / avg = 16 B
+ 
+# current buf: size = 8162 B / used = 3308 B / count = 205 / avg = 16 B
+
+# strcache performance: lookups = 536 / hit rate = 61%
+# hash-table stats:
+# Load=205/8192=3%, Rehash=0, Collisions=7/536=1%
+# Finished Make data base on Wed Jul 20 09:52:44 2022
+
+# make[1]: Leaving directory '/home/yusheng/Documents/ltp-ddt'
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Wed Jul 20 09:52:44 2022
+
+# Variables
+
+# makefile (from 'Makefile', line 167)
+SRCDIR_INSTALL_READONLY := Version
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+LC_NAME = ms_MY.UTF-8
+# environment
+LC_NUMERIC = ms_MY.UTF-8
+# environment
+VSCODE_CWD = /home/yusheng/Documents
+# makefile (from 'Makefile', line 63)
+define target_to_dir_dep_mapping
+ifeq ($$(filter %-clean,$(1)),) # not *-clean
+$(1): | $$(abs_top_builddir)/$$(basename $$(subst -,.,$(1)))
+else				# clean
+$(1):: | $$(abs_top_builddir)/$$(basename $$(subst -,.,$(1)))
+endif
+endef
+# environment
+LC_ADDRESS = ms_MY.UTF-8
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 38)
+BUILD_TREE_UNCONFIGURED := 4
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/102/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/yusheng/Documents/ltp-ddt
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+OLDPWD = /home/yusheng
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 60)
+builddir := .
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/yusheng/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+# makefile (from 'Makefile', line 83)
+BOOTSTRAP_TARGETS := doc gitignore_clean lib libs pan testcases tools utils
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.CYVVP1
+# default
+.LOADED := 
+# makefile (from 'Makefile', line 165)
+BINDIR_INSTALL_SCRIPTS := execltp
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile (from 'Makefile', line 87)
+MAKE_TARGETS := pan-all utils-all testcases-all tools-all
+# environment
+GNOME_TERMINAL_SERVICE = :1.108
+# makefile
+MAKEFLAGS = prR
+# makefile
+CURDIR := /home/yusheng/Documents/ltp-ddt
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 26)
+AUTOHEADER = autoheader
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -prR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 25)
+BEFORE := .gitignore-before
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 1)
+MAKEFILE_LIST := Makefile /home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk /home/yusheng/Documents/ltp-ddt/include/mk/functions.mk /home/yusheng/Documents/ltp-ddt/include/mk/automake.mk /home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# makefile (from 'Makefile', line 134)
+INCLUDE_CLEAN_RDEPS := 
+# environment
+VSCODE_PID = 6144
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 64)
+AUTOMAKE_FILES := config.guess config.sub install-sh missing stamp-h1
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 65)
+cwd_rel2 := /home/yusheng/Documents/ltp-ddt
+# environment
+SESSION_MANAGER = local/yusheng:@/tmp/.ICE-unix/1486,unix/yusheng:/tmp/.ICE-unix/1486
+# automatic
+*F = $(notdir $*)
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 36)
+BUILD_TREE_NONSRCDIR_INSTALL := 3
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 29)
+IGNORE_DIR_EXPR := egrep -v "^$$(echo "testcases/realtime" | tr " " "|")"
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 27)
+AUTOMAKE = automake
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from 'Makefile', line 102)
+INSTALL_DIR := /
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 46)
+abs_top_srcdir := /home/yusheng/Documents/ltp-ddt
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 93)
+AUTOGENERATED_FILES = include/mk/config.mk include/mk/features.mk lib/ltp.pc m4/Makefile execltp
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 166)
+SRCDIR_INSTALL_SCRIPTS := IDcheck.sh runltp ver_linux
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# makefile (from 'Makefile', line 168)
+SRCDIR_INSTALL_TARGETS := IDcheck.sh runltp ver_linux Version
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 1
+# makefile (from 'Makefile', line 30)
+top_srcdir = $(CURDIR)
+# makefile (from 'Makefile', line 47)
+UCLINUX = 0
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/722a1408_f86f_4e93_a918_1a83da2b16bd
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 54)
+top_builddir = $(top_srcdir)
+# environment
+SNAP_COOKIE = dPYqhgD2HpsV0zwzshVdQJepVkWxBo4_PU8BRXyHVzRPDr-tTVoE
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 34)
+BUILD_TREE_SRCDIR_INSTALL := 2
+# environment
+LC_MONETARY = ms_MY.UTF-8
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/yusheng/snap/code/common
+# environment
+LC_TIME = ms_MY.UTF-8
+# environment
+SNAP = /snap/code/102
+# environment
+INVOCATION_ID = ddeac89929a544338ef3f94aa6e0c8f6
+# environment
+SNAP_REVISION = 102
+# environment
+SNAP_REAL_HOME = /home/yusheng
+# makefile (from 'Makefile', line 71)
+COMMON_TARGETS := pan utils testcases tools
+# makefile (from 'Makefile', line 194)
+INSTALL_TARGETS := doc-install pan-install utils-install testcases-install tools-install //execltp
+# environment
+USERNAME = yusheng
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LC_TELEPHONE = ms_MY.UTF-8
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/functions.mk', line 45)
+define get_make_dirs
+SUBDIRS	?= $$(subst $$(abs_srcdir)/,,$$(patsubst %/Makefile,%,$$(wildcard $$(abs_srcdir)/*/Makefile)))
+SUBDIRS	:= $$(filter-out $$(FILTER_OUT_DIRS),$$(SUBDIRS))
+endef
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 69)
+abs_srcdir := /home/yusheng/Documents/ltp-ddt
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 71)
+srcdir := /home/yusheng/Documents/ltp-ddt
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 64)
+cwd_rel1 := 
+# environment
+LOGNAME = yusheng
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SNAP_ARCH = amd64
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 119)
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 1508
+# environment
+DISPLAY = :0
+# environment
+USER = yusheng
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 57)
+ 
+/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk:92: /home/yusheng/Documents/ltp-ddt/include/mk/features.mk: No such file or directory
+make: *** [/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk:115: /home/yusheng/Documents/ltp-ddt/include/mk/features.mk] Error 1
+
+abs_top_builddir := /home/yusheng/Documents/ltp-ddt
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/102
+# environment
+SNAP_CONTEXT = dPYqhgD2HpsV0zwzshVdQJepVkWxBo4_PU8BRXyHVzRPDr-tTVoE
+# environment
+MANAGERPID = 1272
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 62)
+abs_builddir := /home/yusheng/Documents/ltp-ddt
+# environment
+LC_MEASUREMENT = ms_MY.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 6093
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 25)
+AUTOCONF = autoconf
+# environment
+LC_PAPER = ms_MY.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+COLORTERM = truecolor
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/yusheng/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+JOURNAL_STREAM = 8:49517
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 102)
+BUILD_TREE_STATE := 2
+# makefile (from 'Makefile', line 85)
+CLEAN_TARGETS := gitignore_clean-clean pan-clean utils-clean testcases-clean tools-clean lib-clean libs-clean
+# environment
+HOME = /home/yusheng
+# environment
+QT_IM_MODULE = ibus
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 24)
+ACLOCAL = aclocal
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 32)
+BUILD_TREE_BUILDDIR_INSTALL := 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-4122e680-1.69.2-main.sock
+# environment
+TERM = xterm-256color
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/102/usr/share/glib-2.0/schemas
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 27)
+AFTER := .gitignore-after
+# environment
+IM_CONFIG_PHASE = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = 3b889b09
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VTE_VERSION = 6800
+# environment
+SNAP_COMMON = /var/snap/code/common
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 29)
+AUTOCONFED_SUBDIRS = testcases/realtime
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 66)
+cwd_rel_from_top := 
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+SNAP_USER_DATA = /home/yusheng/snap/code/102
+# environment
+XDG_MENU_PREFIX = gnome-
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk', line 29)
+ENV_PRE_LOADED = 1
+# makefile (from '/home/yusheng/Documents/ltp-ddt/include/mk/functions.mk', line 32)
+define generate_install_rule
+
+INSTALL_FILES		+= $$(abspath $$(DESTDIR)/$(3)/$(1))
+
+$$(abspath $$(DESTDIR)/$(3)/$(1)): $$(abspath $$(dir $$(DESTDIR)/$(3)/$(1)))
+	install -m $$(INSTALL_MODE) $(shell test -d "$(2)/$(1)" && echo "-d") $(PARAM) "$(2)/$(1)" $$@
+	$(shell test -d "$(2)/$(1)" && echo "install -m "'$$(INSTALL_MODE) $(PARAM)' "$(2)/$(1)/*" -t '$$@')
+endef
+# environment
+GDMSESSION = ubuntu
+# environment
+LC_IDENTIFICATION = ms_MY.UTF-8
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+# Load=173/1024=17%, Rehash=0, Collisions=56/430=13%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# /home/yusheng/Documents/ltp-ddt/mk/include: could not be stat'd.
+# /home/yusheng/Documents/ltp-ddt/m4 (device 2051, inode 2497679): 33 files, no impossibilities.
+# m4 (device 2051, inode 2497679): 33 files, no impossibilities.
+# . (device 2051, inode 2497179): 41 files, no impossibilities.
+# /home/yusheng/Documents/ltp-ddt/mk: could not be stat'd.
+# /home/yusheng/Documents/ltp-ddt/include (device 2051, inode 2497285): No files, no impossibilities so far.
+
+# 107 files, no impossibilities in 6 directories.
+
+# Implicit Rules
+
+%.am:
+
+%.default:
+
+%.h:
+
+%.in:
+
+%.m4:
+
+%.mk:
+
+# 6 implicit rules, 0 (0.0%) terminal.
+# Files
+
+Version:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 176):
+	if git describe >/dev/null 2>&1; then \
+		git describe > "$@"; \
+	else \
+		cp $(top_srcdir)/VERSION "$@"; \
+	fi
+
+# Not a target:
+m4/ltp-taskstats.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-libmnl.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+utils-all: lib-all libs-all | /home/yusheng/Documents/ltp-ddt/utils
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+# Not a target:
+m4/ltp-nommu-linux.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean_install_dir::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 149):
+	$(RM) -Rf "$(INSTALL_DIR)"
+
+# Not a target:
+m4/ltp-clone7args.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+distclean:: clean ac-distclean
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'distclean'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 101):
+	for d in $(AUTOCONFED_SUBDIRS); do \
+	    $(MAKE) -C "$(top_srcdir)/$$d" $@; \
+	done
+	$(RM) -f $(AUTOGENERATED_FILES)
+
+m4/Makefile: /home/yusheng/Documents/ltp-ddt/config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 109):
+	$(SHELL) $^
+
+# Not a target:
+.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pan-install: / / | /home/yusheng/Documents/ltp-ddt/pan
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+lib-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+lib-clean:: | /home/yusheng/Documents/ltp-ddt/lib
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+testcases:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ax_compare_version.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/include/mk/features.mk:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: '/home/yusheng/Documents/ltp-ddt/include/mk/features'
+#  Modification time never checked.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := /home/yusheng/Documents/ltp-ddt/include/mk/features.mk
+# automatic
+# * := /home/yusheng/Documents/ltp-ddt/include/mk/features
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/15=13%
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 115):
+	$(MAKE) -C $(top_srcdir) help; false
+
+# Not a target:
+.am:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pan:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-eventfd.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lib/ltp.pc: /home/yusheng/Documents/ltp-ddt/config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 109):
+	$(SHELL) $^
+
+testcases/realtime/configure:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 36):
+	$(MAKE) -C $(@D) autotools
+
+# Not a target:
+m4/ltp-docparse.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+m4/Makefile.in: m4/Makefile.am aclocal.m4
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 68):
+	$(AUTOMAKE) -c -a
+
+# Not a target:
+.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.gitignore: | .gitignore-before .gitignore-after
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 51):
+	diff -u $(BEFORE) $(AFTER) | grep '^+' | sed -e 's,^\+,,g' > $@
+
+include-all: | /home/yusheng/Documents/ltp-ddt/include
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+# Not a target:
+configure.ac:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include-install: /home/yusheng/Documents/ltp-ddt/include/config.h include/mk/config.mk include-all | /home/yusheng/Documents/ltp-ddt/include
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+# Not a target:
+m4/ltp-tirpc.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-numa.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/utils:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+configure: configure.ac aclocal.m4
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 51):
+	$(AUTOCONF)
+
+# Not a target:
+Makefile:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-20 09:47:42.401609898
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-fcntl.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lib-install: lib-all | /home/yusheng/Documents/ltp-ddt/lib
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/include/mk/functions.mk:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-20 09:47:42.409606995
+#  File has not been updated.
+
+missing: m4/Makefile.in
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/Makefile.am:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/include/mk/config.mk:
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 115):
+	$(MAKE) -C $(top_srcdir) help; false
+
+utils-install: / / | /home/yusheng/Documents/ltp-ddt/utils
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+//ver_linux:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: '//ver_linux'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 189):
+	install -m 00755 "$(top_srcdir)/$(@F)" "$@"
+
+cscope: pan utils testcases tools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 208):
+	cscope -R -b
+
+stamp-h1: m4/Makefile.in
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-crypto.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 58):
+	mkdir -p "$@"
+
+clean:: gitignore_clean-clean pan-clean utils-clean testcases-clean tools-clean lib-clean libs-clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 161):
+	$(RM) -f Version
+
+# Not a target:
+m4/ltp-host-cpu.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/testcases:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+# Not a target:
+m4/ltp-linuxrandom.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+tools-all: lib-all libs-all | /home/yusheng/Documents/ltp-ddt/tools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+testcases-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+testcases-clean:: | /home/yusheng/Documents/ltp-ddt/testcases
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+autoconf: configure
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+//Version: Version
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 183):
+	install -m 00644 "$(top_builddir)/$(@F)" "$@"
+
+# Not a target:
+m4/ltp-keyutils.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-ptrace.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-acl.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-fortify_source.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+utils-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+utils-clean:: | /home/yusheng/Documents/ltp-ddt/utils
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/include:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+menuconfig:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 212):
+	@$(SHELL) "$(top_srcdir)/ltpmenu"
+
+aclocal: aclocal.m4
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+gitignore_clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 35):
+	$(RM) -f $(BEFORE) $(AFTER)
+
+autoheader: configure.ac m4/ax_compare_version.m4 m4/ax_prog_perl_modules.m4 m4/ltp-acl.m4 m4/ltp-atomic.m4 m4/ltp-builtin_clear_cache.m4 m4/ltp-cap.m4 m4/ltp-clone7args.m4 m4/ltp-crypto.m4 m4/ltp-docparse.m4 m4/ltp-eventfd.m4 m4/ltp-fcntl.m4 m4/ltp-fortify_source.m4 m4/ltp-host-cpu.m4 m4/ltp-kernel_devel.m4 m4/ltp-keyutils.m4 m4/ltp-libmnl.m4 m4/ltp-linuxrandom.m4 m4/ltp-mremap_fixed.m4 m4/ltp-nommu-linux.m4 m4/ltp-numa.m4 m4/ltp-perf_event_open.m4 m4/ltp-ptrace.m4 m4/ltp-selinux.m4 m4/ltp-signalfd.m4 m4/ltp-sync_add_and_fetch.m4 m4/ltp-taskstats.m4 m4/ltp-tirpc.m4 m4/ltp-utimensat.m4 m4/ltp-warn_oldstyle.m4 m4/ltp-version.m4 aclocal.m4
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 55):
+	$(AUTOHEADER)
+
+pan-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+pan-clean:: | /home/yusheng/Documents/ltp-ddt/pan
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pan-all: lib-all libs-all | /home/yusheng/Documents/ltp-ddt/pan
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+/home/yusheng/Documents/ltp-ddt/lib:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+maintainer-clean:: distclean ac-maintainer-clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 09:47:42.409606995
+#  File has been updated.
+#  Successfully updated.
+
+.gitignore-before:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 38):
+	$(MAKE) distclean
+	$(MAKE) ac-maintainer-clean
+	find . | $(IGNORE_DIR_EXPR) > $@
+
+/home/yusheng/Documents/ltp-ddt/doc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+lib-all: | /home/yusheng/Documents/ltp-ddt/lib
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+config.guess: m4/Makefile.in
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+ac-distclean:: ac-clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+automake: aclocal config.guess config.sub install-sh missing stamp-h1
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/tools:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+/home/yusheng/Documents/ltp-ddt/libs:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+# Not a target:
+m4/ltp-mremap_fixed.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include/mk/features.mk: /home/yusheng/Documents/ltp-ddt/config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 109):
+	$(SHELL) $^
+ 
+
+include-clean:: | /home/yusheng/Documents/ltp-ddt/include
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 137):
+	-$(MAKE) -C include -f "$(abs_top_srcdir)/include/Makefile" clean
+
+all: pan-all utils-all testcases-all tools-all Version
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+help:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 204):
+	@echo "Please read the Configuration section in $(top_srcdir)/INSTALL"
+	@exit 1
+
+tools-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+tools-clean:: | /home/yusheng/Documents/ltp-ddt/tools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-perf_event_open.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+tools-install: / / | /home/yusheng/Documents/ltp-ddt/tools
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-20 09:47:42.409606995
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+VERSION:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+config.sub: m4/Makefile.in
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-cap.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/include/config.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+m4/ltp-version.m4: VERSION
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 61):
+	sed -n '1{s:LTP-:m4_define([LTP_VERSION],[:;s:$$:]):;p;q}' $< > $@
+
+# Not a target:
+m4/ax_prog_perl_modules.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/pan:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+autotools: aclocal autoconf autoheader automake testcases/realtime/configure
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+ac-maintainer-clean:: ac-distclean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 82):
+	for d in $(AUTOCONFED_SUBDIRS); do \
+	    $(MAKE) -C "$(top_srcdir)/$$d" $@; \
+	done
+	$(RM) -f aclocal.m4 configure $(AUTOMAKE_FILES) m4/Makefile.in
+	$(RM) -f include/*config.h.in
+
+# Not a target:
+m4/ltp-signalfd.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+testcases-install: / / | /home/yusheng/Documents/ltp-ddt/testcases
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+libs-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+libs-clean:: | /home/yusheng/Documents/ltp-ddt/libs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+aclocal.m4: m4/ax_compare_version.m4 m4/ax_prog_perl_modules.m4 m4/ltp-acl.m4 m4/ltp-atomic.m4 m4/ltp-builtin_clear_cache.m4 m4/ltp-cap.m4 m4/ltp-clone7args.m4 m4/ltp-crypto.m4 m4/ltp-docparse.m4 m4/ltp-eventfd.m4 m4/ltp-fcntl.m4 m4/ltp-fortify_source.m4 m4/ltp-host-cpu.m4 m4/ltp-kernel_devel.m4 m4/ltp-keyutils.m4 m4/ltp-libmnl.m4 m4/ltp-linuxrandom.m4 m4/ltp-mremap_fixed.m4 m4/ltp-nommu-linux.m4 m4/ltp-numa.m4 m4/ltp-perf_event_open.m4 m4/ltp-ptrace.m4 m4/ltp-selinux.m4 m4/ltp-signalfd.m4 m4/ltp-sync_add_and_fetch.m4 m4/ltp-taskstats.m4 m4/ltp-tirpc.m4 m4/ltp-utimensat.m4 m4/ltp-warn_oldstyle.m4 m4/ltp-version.m4
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 45):
+	$(ACLOCAL) -I m4
+
+testcases-all: lib-all libs-all | /home/yusheng/Documents/ltp-ddt/testcases
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+.gitignore-after:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/gitignore.mk', line 43):
+	$(MAKE) autotools
+	./configure --prefix=/dev/null
+	$(MAKE) all
+	find . | $(IGNORE_DIR_EXPR) > $@
+	# Set everything in autoconf land back to a sane state.
+	$(MAKE) distclean
+
+# Not a target:
+m4/ltp-atomic.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+//runltp:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: '//runltp'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 189):
+	install -m 00755 "$(top_srcdir)/$(@F)" "$@"
+
+doc-install: / / | /home/yusheng/Documents/ltp-ddt/doc
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(MAKE) -C "$(subst -install,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -install,,$@)/Makefile" install
+
+install: doc-install pan-install utils-install testcases-install tools-install //execltp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/yusheng/Documents/ltp-ddt/gitignore_clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 106):
+	mkdir -m 00755 -p "$@"
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/config.status:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+//execltp: / /
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: '//execltp'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 186):
+	install -m 00755 "$(top_builddir)/$(@F)" "$@"
+
+//IDcheck.sh:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: '//IDcheck.sh'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 189):
+	install -m 00755 "$(top_srcdir)/$(@F)" "$@"
+
+# Not a target:
+.default:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-warn_oldstyle.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+tools:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+gitignore_clean-clean::
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-$(MAKE) -C "$(subst -clean,,$@)" \
+		 -f "$(abs_top_srcdir)/$(subst -clean,,$@)/Makefile" clean
+
+gitignore_clean-clean:: | /home/yusheng/Documents/ltp-ddt/gitignore_clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+utils:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ac-clean::
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 72):
+	$(RM) -rf autom4te.cache
+	$(RM) -f config.log config.status
+	$(RM) -f include/config.h include/stamp-h1
+	$(RM) -f m4/Makefile m4/ltp-version.m4
+	for d in $(AUTOCONFED_SUBDIRS); do \
+	    $(MAKE) -C "$(top_srcdir)/$$d" $@; \
+	done
+
+# Not a target:
+/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-20 09:47:42.409606995
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-kernel_devel.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.SUFFIXES: .am .default .h .in .m4 .mk
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: testcases/realtime/configure autotools aclocal autoconf autoheader automake ac-clean ac-distclean ac-maintainer-clean gitignore_clean include-all include-install clean_install_dir Version help
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-selinux.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+install-sh: m4/Makefile.in
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include/mk/config.mk: /home/yusheng/Documents/ltp-ddt/config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 109):
+	$(SHELL) $^
+
+execltp: /home/yusheng/Documents/ltp-ddt/config.status
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk', line 109):
+	$(SHELL) $^
+
+libs-all: /home/yusheng/Documents/ltp-ddt/libs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	$(MAKE) -C "$(subst -all,,$@)" \
+		-f "$(abs_top_srcdir)/$(subst -all,,$@)/Makefile" all
+
+# Not a target:
+m4/ltp-sync_add_and_fetch.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-utimensat.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+m4/ltp-builtin_clear_cache.m4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.mk:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=129/1024=13%, Rehash=0, Collisions=26/443=6%
+# VPATH Search Paths
+
+vpath %.am /home/yusheng/Documents/ltp-ddt/m4
+vpath %.default /home/yusheng/Documents/ltp-ddt/include
+vpath %.h /home/yusheng/Documents/ltp-ddt/include:/home/yusheng/Documents/ltp-ddt/include
+vpath %.in /home/yusheng/Documents/ltp-ddt/include
+vpath %.m4 /home/yusheng/Documents/ltp-ddt/m4
+vpath %.mk /home/yusheng/Documents/ltp-ddt/mk:/home/yusheng/Documents/ltp-ddt/mk/include
+
+# 6 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 205 / storage = 3328 B / avg = 16 B
+# current buf: size = 8162 B / used = 3328 B / count = 205 / avg = 16 B
+
+# strcache performance: lookups = 540 / hit rate = 62%
+# hash-table stats:
+# Load=205/8192=3%, Rehash=0, Collisions=7/540=1%
+# Finished Make data base on Wed Jul 20 09:52:44 2022
+
+ 

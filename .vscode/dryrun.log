@@ -1,4 +1,319 @@
-make.exe --dry-run --keep-going --print-directory
-'make.exe' is not recognized as an internal or external command,
-operable program or batch file.
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/yusheng/Documents/ltp-ddt'
+make -C /home/yusheng/Documents/ltp-ddt help; false
+make[1]: Entering directory '/home/yusheng/Documents/ltp-ddt'
+Please read the Configuration section in /home/yusheng/Documents/ltp-ddt/INSTALL
+make[1]: Leaving directory '/home/yusheng/Documents/ltp-ddt'
+make -C /home/yusheng/Documents/ltp-ddt help; false
+make[1]: Entering directory '/home/yusheng/Documents/ltp-ddt'
+Please read the Configuration section in /home/yusheng/Documents/ltp-ddt/INSTALL
+make[1]: Leaving directory '/home/yusheng/Documents/ltp-ddt'
+mkdir -m 00755 -p "/home/yusheng/Documents/ltp-ddt/lib"
+make -C "lib" \
+	-f "/home/yusheng/Documents/ltp-ddt/lib/Makefile" all
+make[1]: Entering directory '/home/yusheng/Documents/ltp-ddt/lib'
+mkdir -m 00755 -p "newlib_tests"
+mkdir -m 00755 -p "tests"
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o cloner.o cloner.c
+echo CC lib/cloner.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o get_path.o get_path.c
+echo CC lib/get_path.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o parse_opts.o parse_opts.c
+echo CC lib/parse_opts.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o random_range.o random_range.c
+echo CC lib/random_range.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o safe_file_ops.o safe_file_ops.c
+echo CC lib/safe_file_ops.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o safe_macros.o safe_macros.c
+echo CC lib/safe_macros.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o safe_net.o safe_net.c
+echo CC lib/safe_net.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o safe_pthread.o safe_pthread.c
+echo CC lib/safe_pthread.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o safe_stdio.o safe_stdio.c
+echo CC lib/safe_stdio.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o self_exec.o self_exec.c
+echo CC lib/self_exec.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tlibio.o tlibio.c
+echo CC lib/tlibio.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_af_alg.o tst_af_alg.c
+echo CC lib/tst_af_alg.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_ansi_color.o tst_ansi_color.c
+echo CC lib/tst_ansi_color.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_assert.o tst_assert.c
+echo CC lib/tst_assert.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_bool_expr.o tst_bool_expr.c
+echo CC lib/tst_bool_expr.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_buffers.o tst_buffers.c
+echo CC lib/tst_buffers.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_capability.o tst_capability.c
+echo CC lib/tst_capability.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_cgroup.o tst_cgroup.c
+echo CC lib/tst_cgroup.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_checkpoint.o tst_checkpoint.c
+echo CC lib/tst_checkpoint.o
+ 
+make[1]: *** [Makefile:205: help] Error 1
+/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk:92: /home/yusheng/Documents/ltp-ddt/include/mk/features.mk: No such file or directory
+make: *** [/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk:115: /home/yusheng/Documents/ltp-ddt/include/mk/features.mk] Error 1
+make[1]: *** [Makefile:205: help] Error 1
+/home/yusheng/Documents/ltp-ddt/include/mk/env_pre.mk:91: /home/yusheng/Documents/ltp-ddt/include/mk/config.mk: No such file or directory
+make: *** [/home/yusheng/Documents/ltp-ddt/include/mk/automake.mk:115: /home/yusheng/Documents/ltp-ddt/include/mk/config.mk] Error 1
+make: Failed to remake makefile '/home/yusheng/Documents/ltp-ddt/include/mk/features.mk'.
+make: Failed to remake makefile '/home/yusheng/Documents/ltp-ddt/include/mk/config.mk'.
+../include/mk/env_pre.mk:92: /home/yusheng/Documents/ltp-ddt/include/mk/features.mk: No such file or directory
+make[1]: *** No rule to make target '/home/yusheng/Documents/ltp-ddt/include/mk/features.mk'.
+../include/mk/env_pre.mk:91: /home/yusheng/Documents/ltp-ddt/include/mk/config.mk: No such file or directory
+make[1]: *** No rule to make target '/home/yusheng/Documents/ltp-ddt/include/mk/config.mk'.
+make[1]: Failed to remake makefile '/home/yusheng/Documents/ltp-ddt/include/mk/features.mk'.
+make[1]: Failed to remake makefile '/home/yusheng/Documents/ltp-ddt/include/mk/config.mk'.
 
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_checksum.o tst_checksum.c
+echo CC lib/tst_checksum.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_clocks.o tst_clocks.c
+echo CC lib/tst_clocks.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_cmd.o tst_cmd.c
+echo CC lib/tst_cmd.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_coredump.o tst_coredump.c
+echo CC lib/tst_coredump.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_cpu.o tst_cpu.c
+echo CC lib/tst_cpu.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_crypto.o tst_crypto.c
+echo CC lib/tst_crypto.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_device.o tst_device.c
+echo CC lib/tst_device.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_dir_is_empty.o tst_dir_is_empty.c
+echo CC lib/tst_dir_is_empty.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_fill_file.o tst_fill_file.c
+echo CC lib/tst_fill_file.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_fill_fs.o tst_fill_fs.c
+echo CC lib/tst_fill_fs.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_fs_has_free.o tst_fs_has_free.c
+echo CC lib/tst_fs_has_free.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_fs_link_count.o tst_fs_link_count.c
+echo CC lib/tst_fs_link_count.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_fs_setup.o tst_fs_setup.c
+echo CC lib/tst_fs_setup.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_fs_type.o tst_fs_type.c
+echo CC lib/tst_fs_type.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_get_bad_addr.o tst_get_bad_addr.c
+echo CC lib/tst_get_bad_addr.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_hugepage.o tst_hugepage.c
+echo CC lib/tst_hugepage.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_ioctl.o tst_ioctl.c
+echo CC lib/tst_ioctl.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_kconfig.o tst_kconfig.c
+echo CC lib/tst_kconfig.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_kernel.o tst_kernel.c
+echo CC lib/tst_kernel.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_kvercmp.o tst_kvercmp.c
+echo CC lib/tst_kvercmp.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_lockdown.o tst_lockdown.c
+echo CC lib/tst_lockdown.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_memutils.o tst_memutils.c
+echo CC lib/tst_memutils.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_mkfs.o tst_mkfs.c
+echo CC lib/tst_mkfs.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_module.o tst_module.c
+echo CC lib/tst_module.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_net.o tst_net.c
+echo CC lib/tst_net.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_parse_opts.o tst_parse_opts.c
+echo CC lib/tst_parse_opts.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_path_has_mnt_flags.o tst_path_has_mnt_flags.c
+echo CC lib/tst_path_has_mnt_flags.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_pid.o tst_pid.c
+echo CC lib/tst_pid.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_process_state.o tst_process_state.c
+echo CC lib/tst_process_state.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_res.o tst_res.c
+echo CC lib/tst_res.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_resource.o tst_resource.c
+echo CC lib/tst_resource.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_safe_macros.o tst_safe_macros.c
+echo CC lib/tst_safe_macros.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_safe_sysv_ipc.o tst_safe_sysv_ipc.c
+echo CC lib/tst_safe_sysv_ipc.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_safe_timerfd.o tst_safe_timerfd.c
+echo CC lib/tst_safe_timerfd.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_sig.o tst_sig.c
+echo CC lib/tst_sig.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_sig_proc.o tst_sig_proc.c
+echo CC lib/tst_sig_proc.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_status.o tst_status.c
+echo CC lib/tst_status.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_supported_fs_types.o tst_supported_fs_types.c
+echo CC lib/tst_supported_fs_types.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_sys_conf.o tst_sys_conf.c
+echo CC lib/tst_sys_conf.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_taint.o tst_taint.c
+echo CC lib/tst_taint.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_test.o tst_test.c
+echo CC lib/tst_test.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_timer.o tst_timer.c
+echo CC lib/tst_timer.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_timer_test.o tst_timer_test.c
+echo CC lib/tst_timer_test.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_tmpdir.o tst_tmpdir.c
+echo CC lib/tst_tmpdir.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_virt.o tst_virt.c
+echo CC lib/tst_virt.o
+cc -I../include -I../include -I../include/old/ -I. -DLTPLIB -c -o tst_wallclock.o tst_wallclock.c
+echo CC lib/tst_wallclock.o
+if [ -z "cloner.o get_path.o parse_opts.o random_range.o safe_file_ops.o safe_macros.o safe_net.o safe_pthread.o safe_stdio.o self_exec.o tlibio.o tst_af_alg.o tst_ansi_color.o tst_assert.o tst_bool_expr.o tst_buffers.o tst_capability.o tst_cgroup.o tst_checkpoint.o tst_checksum.o tst_clocks.o tst_cmd.o tst_coredump.o tst_cpu.o tst_crypto.o tst_device.o tst_dir_is_empty.o tst_fill_file.o tst_fill_fs.o tst_fs_has_free.o tst_fs_link_count.o tst_fs_setup.o tst_fs_type.o tst_get_bad_addr.o tst_hugepage.o tst_ioctl.o tst_kconfig.o tst_kernel.o tst_kvercmp.o tst_lockdown.o tst_memutils.o tst_mkfs.o tst_module.o tst_net.o tst_parse_opts.o tst_path_has_mnt_flags.o tst_pid.o tst_process_state.o tst_res.o tst_resource.o tst_safe_macros.o tst_safe_sysv_ipc.o tst_safe_timerfd.o tst_sig.o tst_sig_proc.o tst_status.o tst_supported_fs_types.o tst_sys_conf.o tst_taint.o tst_test.o tst_timer.o tst_timer_test.o tst_tmpdir.o tst_virt.o tst_wallclock.o" ] ; then \
+	echo "Cowardly refusing to create empty archive"; \
+	exit 1; \
+fi
+echo "AR libltp.a"
+ar -rc "libltp.a" cloner.o get_path.o parse_opts.o random_range.o safe_file_ops.o safe_macros.o safe_net.o safe_pthread.o safe_stdio.o self_exec.o tlibio.o tst_af_alg.o tst_ansi_color.o tst_assert.o tst_bool_expr.o tst_buffers.o tst_capability.o tst_cgroup.o tst_checkpoint.o tst_checksum.o tst_clocks.o tst_cmd.o tst_coredump.o tst_cpu.o tst_crypto.o tst_device.o tst_dir_is_empty.o tst_fill_file.o tst_fill_fs.o tst_fs_has_free.o tst_fs_link_count.o tst_fs_setup.o tst_fs_type.o tst_get_bad_addr.o tst_hugepage.o tst_ioctl.o tst_kconfig.o tst_kernel.o tst_kvercmp.o tst_lockdown.o tst_memutils.o tst_mkfs.o tst_module.o tst_net.o tst_parse_opts.o tst_path_has_mnt_flags.o tst_pid.o tst_process_state.o tst_res.o tst_resource.o tst_safe_macros.o tst_safe_sysv_ipc.o tst_safe_timerfd.o tst_sig.o tst_sig_proc.o tst_status.o tst_supported_fs_types.o tst_sys_conf.o tst_taint.o tst_test.o tst_timer.o tst_timer_test.o tst_tmpdir.o tst_virt.o tst_wallclock.o
+echo "RANLIB libltp.a"
+ranlib "libltp.a"
+set -e; for dir in newlib_tests tests; do \
+    make --no-print-directory -C $dir -f "/home/yusheng/Documents/ltp-ddt/lib/$dir/Makefile" all; \
+done
+ 
+../../include/mk/env_pre.mk:92: /home/yusheng/Documents/ltp-ddt/include/mk/features.mk: No such file or directory
+make[2]: *** No rule to make target '/home/yusheng/Documents/ltp-ddt/include/mk/features.mk'.
+../../include/mk/env_pre.mk:91: /home/yusheng/Documents/ltp-ddt/include/mk/config.mk: No such file or directory
+make[2]: *** No rule to make target '/home/yusheng/Documents/ltp-ddt/include/mk/config.mk'.
+make[2]: Failed to remake makefile '/home/yusheng/Documents/ltp-ddt/include/mk/features.mk'.
+make[2]: Failed to remake makefile '/home/yusheng/Documents/ltp-ddt/include/mk/config.mk'.
+make[1]: *** [../include/mk/generic_trunk_target.inc:105: all] Error 2
+make: *** [Makefile:114: lib-all] Error 2
+../include/mk/env_pre.mk:92: /home/yusheng/Documents/ltp-ddt/include/mk/features.mk: No such file or directory
+make[1]: *** No rule to make target '/home/yusheng/Documents/ltp-ddt/include/mk/features.mk'.
+../include/mk/env_pre.mk:91: /home/yusheng/Documents/ltp-ddt/include/mk/config.mk: No such file or directory
+make[1]: *** No rule to make target '/home/yusheng/Documents/ltp-ddt/include/mk/config.mk'.
+make[1]: Failed to remake makefile '/home/yusheng/Documents/ltp-ddt/include/mk/features.mk'.
+make[1]: Failed to remake makefile '/home/yusheng/Documents/ltp-ddt/include/mk/config.mk'.
+../../include/mk/env_pre.mk:92: /home/yusheng/Documents/ltp-ddt/include/mk/features.mk: No such file or directory
+make[2]: *** No rule to make target '/home/yusheng/Documents/ltp-ddt/include/mk/features.mk'.
+../../include/mk/env_pre.mk:91: /home/yusheng/Documents/ltp-ddt/include/mk/config.mk: No such file or directory
+make[2]: *** No rule to make target '/home/yusheng/Documents/ltp-ddt/include/mk/config.mk'.
+make[2]: Failed to remake makefile '/home/yusheng/Documents/ltp-ddt/include/mk/features.mk'.
+make[2]: Failed to remake makefile '/home/yusheng/Documents/ltp-ddt/include/mk/config.mk'.
+make[1]: *** [../include/mk/generic_trunk_target.inc:105: all] Error 2
+make: *** [Makefile:114: libs-all] Error 2
+
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test01.c  -lltp -o test01
+echo CC lib/newlib_tests/test01
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test02.c  -lltp -o test02
+echo CC lib/newlib_tests/test02
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test03.c  -lltp -o test03
+echo CC lib/newlib_tests/test03
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test04.c  -lltp -o test04
+echo CC lib/newlib_tests/test04
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test05.c  -lltp -o test05
+echo CC lib/newlib_tests/test05
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test06.c  -lltp -o test06
+echo CC lib/newlib_tests/test06
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test07.c  -lltp -o test07
+echo CC lib/newlib_tests/test07
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -pthread -L../../lib test08.c  -lltp -o test08
+echo CC lib/newlib_tests/test08
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -pthread -L../../lib test09.c  -lltp -o test09
+echo CC lib/newlib_tests/test09
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test10.c  -lltp -o test10
+echo CC lib/newlib_tests/test10
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test11.c  -lltp -o test11
+echo CC lib/newlib_tests/test11
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test12.c  -lltp -o test12
+echo CC lib/newlib_tests/test12
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test13.c  -lltp -o test13
+echo CC lib/newlib_tests/test13
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test14.c  -lltp -o test14
+echo CC lib/newlib_tests/test14
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -pthread -L../../lib test15.c  -lltp -o test15
+echo CC lib/newlib_tests/test15
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -pthread -L../../lib test16.c  -lltp -lrt -o test16
+echo CC lib/newlib_tests/test16
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test17.c  -lltp -o test17
+echo CC lib/newlib_tests/test17
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test18.c  -lltp -o test18
+echo CC lib/newlib_tests/test18
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test19.c  -lltp -o test19
+echo CC lib/newlib_tests/test19
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test20.c  -lltp -o test20
+echo CC lib/newlib_tests/test20
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test21.c  -lltp -o test21
+echo CC lib/newlib_tests/test21
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test22.c  -lltp -o test22
+echo CC lib/newlib_tests/test22
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test_assert.c  -lltp -o test_assert
+echo CC lib/newlib_tests/test_assert
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test_exec.c  -lltp -o test_exec
+echo CC lib/newlib_tests/test_exec
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test_exec_child.c  -lltp -o test_exec_child
+echo CC lib/newlib_tests/test_exec_child
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test_guarded_buf.c  -lltp -o test_guarded_buf
+echo CC lib/newlib_tests/test_guarded_buf
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test_kconfig.c  -lltp -o test_kconfig
+echo CC lib/newlib_tests/test_kconfig
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test_kconfig01.c  -lltp -o test_kconfig01
+echo CC lib/newlib_tests/test_kconfig01
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test_kconfig02.c  -lltp -o test_kconfig02
+echo CC lib/newlib_tests/test_kconfig02
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test_macros01.c  -lltp -o test_macros01
+echo CC lib/newlib_tests/test_macros01
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test_macros02.c  -lltp -o test_macros02
+echo CC lib/newlib_tests/test_macros02
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test_macros03.c  -lltp -o test_macros03
+echo CC lib/newlib_tests/test_macros03
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib test_timer.c  -lltp -o test_timer
+echo CC lib/newlib_tests/test_timer
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib tst_bool_expr.c  -lltp -o tst_bool_expr
+echo CC lib/newlib_tests/tst_bool_expr
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib tst_capability01.c  -lltp -o tst_capability01
+echo CC lib/newlib_tests/tst_capability01
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib tst_capability02.c  -lltp -o tst_capability02
+echo CC lib/newlib_tests/tst_capability02
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib tst_device.c  -lltp -o tst_device
+echo CC lib/newlib_tests/tst_device
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib tst_expiration_timer.c  -lltp -lrt -o tst_expiration_timer
+echo CC lib/newlib_tests/tst_expiration_timer
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib tst_res_hexd.c  -lltp -o tst_res_hexd
+echo CC lib/newlib_tests/tst_res_hexd
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib tst_safe_fileops.c  -lltp -o tst_safe_fileops
+echo CC lib/newlib_tests/tst_safe_fileops
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib tst_strstatus.c  -lltp -o tst_strstatus
+echo CC lib/newlib_tests/tst_strstatus
+cc -I../../include -I../../include -I../../include/old/ -W -Wall -L../../lib variant.c  -lltp -o variant
+echo CC lib/newlib_tests/variant
+make[1]: Leaving directory '/home/yusheng/Documents/ltp-ddt/lib'
+mkdir -m 00755 -p "/home/yusheng/Documents/ltp-ddt/libs"
+make -C "libs" \
+	-f "/home/yusheng/Documents/ltp-ddt/libs/Makefile" all
+make[1]: Entering directory '/home/yusheng/Documents/ltp-ddt/libs'
+mkdir -m 00755 -p "libltpipc"
+mkdir -m 00755 -p "libltpnewipc"
+mkdir -m 00755 -p "libltpnuma"
+mkdir -m 00755 -p "libltpsigwait"
+mkdir -m 00755 -p "libltpuinput"
+mkdir -m 00755 -p "libltpvdso"
+set -e; for dir in libltpipc libltpnewipc libltpnuma libltpsigwait libltpuinput libltpvdso; do \
+    make --no-print-directory -C $dir -f "/home/yusheng/Documents/ltp-ddt/libs/$dir/Makefile" all; \
+done
+cc -I../../include -I../../include -I../../include/old/  -c -o libipc.o libipc.c
+echo CC libs/libltpipc/libipc.o
+cc -I../../include -I../../include -I../../include/old/  -c -o libmsgctl.o libmsgctl.c
+echo CC libs/libltpipc/libmsgctl.o
+if [ -z "libipc.o libmsgctl.o" ] ; then \
+	echo "Cowardly refusing to create empty archive"; \
+	exit 1; \
+fi
+echo "AR libltpipc.a"
+ar -rc "libltpipc.a" libipc.o libmsgctl.o
+echo "RANLIB libltpipc.a"
+ranlib "libltpipc.a"
+make[1]: Leaving directory '/home/yusheng/Documents/ltp-ddt/libs'
+mkdir -m 00755 -p "/home/yusheng/Documents/ltp-ddt/pan"
+mkdir -m 00755 -p "/home/yusheng/Documents/ltp-ddt/utils"
+mkdir -m 00755 -p "/home/yusheng/Documents/ltp-ddt/testcases"
+mkdir -m 00755 -p "/home/yusheng/Documents/ltp-ddt/tools"
+if git describe >/dev/null 2>&1; then \
+	git describe > "Version"; \
+else \
+	cp /home/yusheng/Documents/ltp-ddt/VERSION "Version"; \
+fi
+make: Leaving directory '/home/yusheng/Documents/ltp-ddt'
+ 
