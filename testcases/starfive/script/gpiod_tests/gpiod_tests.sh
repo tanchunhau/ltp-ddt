@@ -80,4 +80,4 @@ test_print_trc "Starting GPIOD test"
 
 # Use do_cmd() (imported from common.sh) to execute your test steps.
 # do_cmd() will check return code and fail the test is return code is non-zero.
-do_cmd "gpiod_test"
+do_cmd "./gpiod_tests"
