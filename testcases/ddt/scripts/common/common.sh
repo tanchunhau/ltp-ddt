@@ -38,6 +38,9 @@ resolve_platform_name() {
 }
 
 export PATH="${PATH}:/opt/ltp/testcases/bin"$( find /opt/ltp/testcases/bin/starfive -type d -exec printf ":"{} \; )
+echo "************** TCH (123) here *********************************"
+echo ${PATH}
+echo "************** TCH (456) here *********************************"
 
 if [ "x$SOC" == "x" ]
 then
