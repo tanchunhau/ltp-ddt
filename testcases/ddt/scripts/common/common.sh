@@ -37,15 +37,11 @@ resolve_platform_name() {
   echo $PLATFORM
 }
 
-export PATH="${PATH}:/opt/ltp/testcases/bin"$( find /opt/ltp/testcases/bin/starfive -type d -exec printf ":"{} \; )
-echo "************** TCH (123) here *********************************"
-echo ${PATH}
-echo "************** TCH (456) here *********************************"
-
 if [ "x$SOC" == "x" ]
 then
    LTPPATH='/opt/ltp'
    export PATH="${PATH}:${LTPPATH}/testcases/bin"$( find ${LTPPATH}/testcases/bin/ddt -type d -exec printf ":"{} \; )
+   export PATH="${PATH}:${LTPPATH}/testcases/bin"$( find ${LTPPATH}/testcases/bin/starfive -type d -exec printf ":"{} \; )
    echo "************** TCH here *********************************"
    plat=`uname -a | cut -d' ' -f 2`
    i=0; DRIVERS=""
@@ -80,9 +76,6 @@ inverted_return="false"
 do_cmd() {
   CMD=$*
   test_print_trc "Inside do_cmd:CMD=$CMD"
-  test_print_trc "************** TCH (abc) here *********************************"
-  test_print_trc "${PATH}"
-  test_print_trc "************** TCH (def) here *********************************"
   eval $CMD
   RESULT=$?
     if [ "$inverted_return" == "false" ]
