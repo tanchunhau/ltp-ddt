@@ -3,4 +3,4 @@
 #  Before run this test, kernel may be required to be modified to do the pinmux for the pins to test
 # @requires gpio
 
-GPIOD_READ_WRITE source 'common.sh'; gpiod_test.sh
+GPIOD_READ_WRITE source 'common.sh'; gpiod_tests.sh
