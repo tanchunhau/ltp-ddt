@@ -80,6 +80,9 @@ inverted_return="false"
 do_cmd() {
   CMD=$*
   test_print_trc "Inside do_cmd:CMD=$CMD"
+  test_print_trc "************** TCH (abc) here *********************************"
+  test_print_trc "${PATH}"
+  test_print_trc "************** TCH (def) here *********************************"
   eval $CMD
   RESULT=$?
     if [ "$inverted_return" == "false" ]
