@@ -1,0 +1,13 @@
+riscv64
+jh7100
+vision-five
+dma
+edma
+gpio
+graphics/fbcon
+i2c
+mmc_host
+net/eth0
+spi_master
+usb
+watchdog
