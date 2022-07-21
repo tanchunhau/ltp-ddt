@@ -37,7 +37,7 @@ resolve_platform_name() {
   echo $PLATFORM
 }
 
-export PATH="${PATH}:${LTPPATH}/testcases/bin"$( find /opt/ltp/testcases/bin/starfive -type d -exec printf ":"{} \; )
+export PATH="${PATH}:/opt/ltp/testcases/bin"$( find /opt/ltp/testcases/bin/starfive -type d -exec printf ":"{} \; )
 
 if [ "x$SOC" == "x" ]
 then
