@@ -41,6 +41,7 @@ if [ "x$SOC" == "x" ]
 then
    LTPPATH='/opt/ltp'
    export PATH="${PATH}:${LTPPATH}/testcases/bin"$( find ${LTPPATH}/testcases/bin/ddt -type d -exec printf ":"{} \; )
+   export PATH="${PATH}:${LTPPATH}/testcases/bin"$( find ${LTPPATH}/testcases/bin/starfive -type d -exec printf ":"{} \; )
    plat=`uname -a | cut -d' ' -f 2`
    i=0; DRIVERS=""
    while read -r file
