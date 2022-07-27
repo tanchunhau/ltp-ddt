@@ -628,7 +628,7 @@ main()
     # to execute.
     if [ -z "$CMDFILES" ] && [ -z "$CMDFILEADDR" ]; then
 
-        SCENARIO_LISTS="$LTPROOT/scenario_groups/default"
+        SCENARIO_LISTS="$LTPROOT/scenario_groups/starfive/${PLATFORM}"
         if [ "$RUN_NETEST" -eq 1 ]; then
             SCENARIO_LISTS="$LTPROOT/scenario_groups/network"
         fi
