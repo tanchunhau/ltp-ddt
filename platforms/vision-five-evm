@@ -1,0 +1,5 @@
+riscv
+starfive
+visionfive-evm
+gpio
+i2c/non_eeprom
