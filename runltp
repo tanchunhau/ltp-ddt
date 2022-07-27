@@ -91,6 +91,7 @@ setup()
     export LTPROOT=${PWD}
     export TMPBASE="/tmp"
     export PATH=$( find ${LTPROOT}/testcases/bin/ddt -type d -exec printf {}":" \; )"${PATH}:${LTPROOT}/testcases/bin"
+    export PATH="${PATH}:${LTPROOT}/testcases/bin"$( find ${LTPPATH}/testcases/bin/starfive -type d -exec printf ":"{} \; )
 
     export LTP_DEV_FS_TYPE="ext2"
 
